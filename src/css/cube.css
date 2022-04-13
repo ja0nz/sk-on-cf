@@ -1,0 +1,11 @@
+/* Compositions */
+@import-glob 'compositions/*';
+
+/* Blocks */
+@import-glob 'blocks/*';
+
+/* Utilities */
+@import-glob 'utilities/*';
+
+/* Tailwind utilities */
+@tailwind utilities;
