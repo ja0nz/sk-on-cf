@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "sk": "svelte-kit",
-    "start": "run-p 'cssgen development' 'sk dev'",
-    "build": "run-s 'cssgen production' 'sk build'",
+    "start": "run-p 'cssgen dev' 'sk dev'",
+    "build": "run-s 'cssgen build' 'sk build'",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "prepare": "svelte-kit sync",

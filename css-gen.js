@@ -1,10 +1,11 @@
-import { writeFile, readFile } from "node:fs/promises";
-import { rmSync } from "node:fs";
+import { writeFile, readFile, rm } from "node:fs/promises";
 import { format } from "prettier";
 import { watch } from "chokidar";
 import { chdir } from "node:process";
+import resolveConfig from 'tailwindcss/resolveConfig.js';
 import tw from "./tailwind.config.cjs";
-const { theme } = tw;
+
+const  { theme } = resolveConfig(tw);
 
 const [node, cwd, mode] = process.argv;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -55,8 +56,12 @@ result = format(result, { parser: "scss" });
 // Push this file into the CSS dir, ready to go
 await writeFile(`custom-props.css`, result);
 
+/*
+ * CUBE section
+ * https://cube.fyi/
+ */
 const CUBE = "cube.css";
-rmSync(CUBE, { force: true });
+await rm(CUBE, { force: true });
 
 const genCSS = watch(["compositions", "blocks", "utilities"]).on(
   "all",
@@ -75,7 +80,7 @@ const genCSS = watch(["compositions", "blocks", "utilities"]).on(
   }
 );
 
-if (mode === "production") {
-  await sleep(500);
+if (mode === "build") {
+  await sleep(500); // wait for the initial .on block
   await genCSS.close();
 }
