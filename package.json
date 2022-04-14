@@ -2,7 +2,7 @@
   "name": "ja_nz",
   "version": "0.0.1",
   "scripts": {
-    "start": "yarn cssgen && svelte-kit dev",
+    "start": "yarn cssgen & svelte-kit dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
@@ -11,19 +11,19 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .prettierignore .",
     "format": "prettier --write --plugin-search-dir=. .",
-    "cssgen": "node ./css-props-generator.js"
+    "cssgen": "node ./css-gen.js"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "^1.0.0-next.311",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
     "autoprefixer": "^10.4.4",
+    "chokidar": "^3.5.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^3.4.1",
     "postcss": "^8.4.12",
-    "postcss-import": "^14.1.0",
-    "postcss-import-ext-glob": "^2.0.1",
     "prettier": "^2.6.2",
     "prettier-plugin-svelte": "^2.7.0",
     "svelte": "^3.47.0",
