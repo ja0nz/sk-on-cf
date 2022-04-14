@@ -7,6 +7,11 @@ import tw from "./tailwind.config.cjs";
 
 const  { theme } = resolveConfig(tw);
 
+/*
+ * Mode arguments following the *svelte-kit* terminology
+ * dev -> development
+ * build -> production
+ */
 const [node, cwd, mode] = process.argv;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
