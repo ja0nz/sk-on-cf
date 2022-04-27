@@ -855,6 +855,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dotenv@npm:^16.0.0":
+  version: 16.0.0
+  resolution: "dotenv@npm:16.0.0"
+  checksum: 664cebb51f0a9a1d1b930f51f0271e72e26d62feaecc9dc03df39453dd494b4e724809ca480fb3ec3213382b1ed3f791aaeb83569a137f9329ce58efd4853dbf
+  languageName: node
+  linkType: hard
+
 "electron-to-chromium@npm:^1.4.84":
   version: 1.4.107
   resolution: "electron-to-chromium@npm:1.4.107"
@@ -1815,6 +1822,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.21.0
     autoprefixer: ^10.4.5
     chokidar: ^3.5.3
+    dotenv: ^16.0.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-svelte3: ^3.4.1
     npm-run-all: ^4.1.5
