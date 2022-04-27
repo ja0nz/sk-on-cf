@@ -39,6 +39,7 @@
   "packageManager": "yarn@3.2.0",
   "dependencies": {
     "@octokit/graphql": "^4.8.0",
+    "@thi.ng/atom": "^5.1.5",
     "@thi.ng/compose": "^2.1.5",
     "@thi.ng/paths": "^5.1.5"
   }

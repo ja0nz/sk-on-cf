@@ -18,7 +18,7 @@
   let msg = "";
 
   // enter client side
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     // TODO Check offline capabilities
     if (navigator?.onLine === false) {
       title = "Offline";

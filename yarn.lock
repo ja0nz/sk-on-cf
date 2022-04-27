@@ -195,6 +195,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@thi.ng/atom@npm:^5.1.5":
+  version: 5.1.5
+  resolution: "@thi.ng/atom@npm:5.1.5"
+  dependencies:
+    "@thi.ng/api": ^8.3.5
+    "@thi.ng/equiv": ^2.1.5
+    "@thi.ng/errors": ^2.1.5
+    "@thi.ng/paths": ^5.1.5
+    tslib: ^2.3.1
+  checksum: f3cc2cec309df15cd124c68e5d2eee7e0ea81014129cafcda499269806e862e3ef7bfb1be3a2bc72f38b30f76a9384dc0055dc945a682c6b5a685f2e90a5b350
+  languageName: node
+  linkType: hard
+
 "@thi.ng/checks@npm:^3.1.5":
   version: 3.1.5
   resolution: "@thi.ng/checks@npm:3.1.5"
@@ -211,6 +224,13 @@ __metadata:
     "@thi.ng/api": ^8.3.5
     "@thi.ng/errors": ^2.1.5
   checksum: 2143c9245b4cb94cee234114af88ad5efdca86d9992ed81bbaf1e1c457c6679af86fcd16c5cdd53a05b3c62f353138a6af7fdaecfae613a99634d63893f6bbe5
+  languageName: node
+  linkType: hard
+
+"@thi.ng/equiv@npm:^2.1.5":
+  version: 2.1.5
+  resolution: "@thi.ng/equiv@npm:2.1.5"
+  checksum: b7a6b7ef9b161ae5f442d4691234d794c9e368014d5ca762fa02badb9ec3578c05113dbf15647447361903e8cf6bf5368080dee782b9c6e777103eb73c16e431
   languageName: node
   linkType: hard
 
@@ -852,13 +872,6 @@ __metadata:
   version: 1.1.3
   resolution: "dlv@npm:1.1.3"
   checksum: d7381bca22ed11933a1ccf376db7a94bee2c57aa61e490f680124fa2d1cd27e94eba641d9f45be57caab4f9a6579de0983466f620a2cd6230d7ec93312105ae7
-  languageName: node
-  linkType: hard
-
-"dotenv@npm:^16.0.0":
-  version: 16.0.0
-  resolution: "dotenv@npm:16.0.0"
-  checksum: 664cebb51f0a9a1d1b930f51f0271e72e26d62feaecc9dc03df39453dd494b4e724809ca480fb3ec3213382b1ed3f791aaeb83569a137f9329ce58efd4853dbf
   languageName: node
   linkType: hard
 
@@ -1816,13 +1829,13 @@ __metadata:
     "@octokit/graphql": ^4.8.0
     "@sveltejs/adapter-static": ^1.0.0-next.29
     "@sveltejs/kit": ^1.0.0-next.321
+    "@thi.ng/atom": ^5.1.5
     "@thi.ng/compose": ^2.1.5
     "@thi.ng/paths": ^5.1.5
     "@typescript-eslint/eslint-plugin": ^5.21.0
     "@typescript-eslint/parser": ^5.21.0
     autoprefixer: ^10.4.5
     chokidar: ^3.5.3
-    dotenv: ^16.0.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-svelte3: ^3.4.1
     npm-run-all: ^4.1.5
