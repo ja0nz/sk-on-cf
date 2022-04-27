@@ -2,10 +2,10 @@ import { writeFile, readFile, rm } from "node:fs/promises";
 import { format } from "prettier";
 import { watch } from "chokidar";
 import { chdir } from "node:process";
-import resolveConfig from 'tailwindcss/resolveConfig.js';
+import resolveConfig from "tailwindcss/resolveConfig.js";
 import tw from "./tailwind.config.cjs";
 
-const  { theme } = resolveConfig(tw);
+const { theme } = resolveConfig(tw);
 
 /*
  * Mode arguments following the *svelte-kit* terminology

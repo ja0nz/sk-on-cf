@@ -1,2 +1,73 @@
 #+TITLE: Readme
 
+WIP;
+
+* Inspiration
+https://muan.co/
+
+* Architecture
+#+begin_src bash :results drawer
+cd ./src && fd . | as-tree
+#+end_src
+
+#+RESULTS:
+:results:
+.
+├── api
+│   ├── client.ts
+│   └── server.ts
+├── app.d.ts
+├── app.html
+├── components
+│   └── SiteHead.svelte
+├── css
+│   ├── blocks
+│   │   └── box.css
+│   ├── compositions
+│   │   ├── cluster.css
+│   │   ├── sidebar.css
+│   │   └── switcher.css
+│   ├── cube.css
+│   ├── custom-props.css
+│   ├── global.css
+│   ├── reset.css
+│   ├── tw.css
+│   └── utilities
+│       ├── flow.css
+│       ├── region.css
+│       ├── visually-hidden.css
+│       └── wrapper.css
+├── io
+│   └── graphql.ts
+└── routes
+    ├── __error.svelte
+    ├── __layout.svelte
+    └── index.svelte
+:end:
+
+** api
+*** client.ts
+*** server.ts
+
+* Modules
+** $app/env
+import { amp, browser, dev, mode, prerendering } from '$app/env';
+https://kit.svelte.dev/docs/modules#$app-env
+
+* Receipts
+** Client code
+#+begin_src javascript
+if (typeof window !== 'undefined') {
+  // enter client side
+}
+#+end_src
+
+* Open Todos
+** Site-head (Nav) -> __layout
+[[file:src/components/SiteHead.svelte][file:~/data/git/svelte/ja.nz/src/components/SiteHead.svelte]]
+
+** routes
+*** __error
+[[file:src/routes/__error.svelte::// TODO Check offline capabilities][Offline capabilities]]
+[[file:src/routes/__error.svelte::// TODO more status?][Error Codes]]
+[[file:src/routes/__error.svelte::>TODO: Try searching for it here!</a][Search in content to escape 404]]

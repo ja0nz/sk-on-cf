@@ -1,1 +1,3 @@
 .yarn/
+.svelte-kit/
+build/

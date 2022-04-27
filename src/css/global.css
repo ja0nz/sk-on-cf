@@ -1,5 +1,5 @@
-@import 'custom-props.css';
-@import 'reset.css';
+@import "custom-props.css";
+@import "reset.css";
 
 /* Global styles */
 body {
@@ -61,7 +61,7 @@ h3 + * {
 }
 
 /* So text scale renders nicely */
-div[class*='text-'] {
+div[class*="text-"] {
   --flow-space: 1rem;
   line-height: 1;
   font-weight: 700;

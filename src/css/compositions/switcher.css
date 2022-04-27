@@ -23,7 +23,9 @@ Can be any acceptable flexbox alignment value.
 
 .switcher > * {
   flex-grow: 1;
-  flex-basis: calc((var(--switcher-target-container-width, 40rem) - 100%) * 999);
+  flex-basis: calc(
+    (var(--switcher-target-container-width, 40rem) - 100%) * 999
+  );
 }
 
 /* Max 2 items,
