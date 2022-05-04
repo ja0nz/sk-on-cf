@@ -1,15 +1,15 @@
-import i from "./issues";
-import { defAtom } from "@thi.ng/atom";
+import iGetIssue from "./getIssue";
+import iAll from "./issuesAll";
+import { ConsoleLogger } from "@thi.ng/logger";
 
 const ctx = {
-    allBlogposts: defAtom(),
-    remarkPlugins: "",
-    rehypePlugins: ""
-}
-const answer = 42;
-const allIssues = i(ctx);
-
-export {
-    answer,
-    allIssues
+  issues: new Map(),
+  logger: new ConsoleLogger("JSON"),
+  remarkPlugins: "",
+  rehypePlugins: "",
 };
+
+const all = iAll(ctx);
+const getIssue = iGetIssue(ctx);
+
+export { getIssue, all };

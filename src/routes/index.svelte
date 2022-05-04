@@ -1,5 +1,5 @@
 <script context="module">
-  import { REPO } from "$lib/api/server";
+  import { REPO } from "$lib/api/backend";
 </script>
 
 <h1>Welcome to SvelteKit</h1>

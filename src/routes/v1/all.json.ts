@@ -1,14 +1,10 @@
-import { getContent } from "$lib/content";
+import { all } from "$lib/fetch";
 import type { RequestHandler } from "@sveltejs/kit";
 
 export async function get({ params }: RequestHandler) {
-  console.log("reach", params);
-  return { hello: 42 };
-
-  const { slug } = params;
   let data;
   try {
-    data = await getContent(slug);
+    data = await all();
     return {
       body: JSON.stringify(data),
       headers: {

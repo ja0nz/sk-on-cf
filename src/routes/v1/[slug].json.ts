@@ -1,10 +1,15 @@
-import { answer } from "$lib/fetch";
+import { getIssue, issueInit } from "$lib/fetch";
+import { assert } from "@thi.ng/errors";
 import type { RequestHandler } from "@sveltejs/kit";
 
 export async function get({ params }: RequestHandler) {
+  assert(
+    await issueInit(),
+    `[${import.meta.url.split("/").pop()}; Could not initialize content`
+  );
   const { slug } = params;
   try {
-    const data = await allIssues(slug);
+    const data = await getIssue(slug);
     console.log(data);
     return {
       body: JSON.stringify(data),

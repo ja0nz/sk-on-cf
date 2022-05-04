@@ -13,9 +13,6 @@ cd ./src && fd . | as-tree
 #+RESULTS:
 :results:
 .
-├── api
-│   ├── client.ts
-│   └── server.ts
 ├── app.d.ts
 ├── app.html
 ├── components
@@ -39,10 +36,21 @@ cd ./src && fd . | as-tree
 │       └── wrapper.css
 ├── io
 │   └── graphql.ts
+├── lib
+│   ├── api
+│   │   ├── client.ts
+│   │   └── server.ts
+│   └── fetch
+│       ├── getIssue.ts
+│       ├── index.ts
+│       └── issueInit.ts
 └── routes
     ├── __error.svelte
     ├── __layout.svelte
-    └── index.svelte
+    ├── index.svelte
+    └── v1
+        ├── [slug].json.ts
+        └── all.json.ts
 :end:
 
 ** api
